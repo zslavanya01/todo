@@ -10,4 +10,6 @@ Clone the todo code
 
 #apt update
 
-#spt install npm
+#apt install npm
+
+#apt install nodejs
