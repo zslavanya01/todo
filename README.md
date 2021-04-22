@@ -9,3 +9,5 @@ Clone the todo code
 #ls
 
 #apt update
+
+#spt install npm
