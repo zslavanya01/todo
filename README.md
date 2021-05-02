@@ -1,15 +1,23 @@
 The todo is the service in Todoapp.
 
-Clone the todo code
-
-#git clone https://github.com/zslavanya/todo.git
-
+#apt update
+#mkdir todo
 #cd todo/
 
-#ls
-
-#apt update
-
+#apt install nodejs
 #apt install npm
 
-#apt install nodejs
+#git clone https://github.com/zslavanya/todo.git
+#cd todo/
+
+#npm install
+# vi /etc/systemd/system/todo.service
+Here we update the required ip
+
+#npm start 
+#killall nodes
+
+#systemctl daemon-reload
+#systemctl start todo
+#systemctl enable todo
+#systemctl status todo
