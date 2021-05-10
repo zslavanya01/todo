@@ -3,8 +3,8 @@ Description = todo Service
 [Service]
 User=root
 Type=simple
-Environment=REDIS_API_ADDRESS=172.91.18.71:8080
-ExecStart=/bin/node /root/todo/todo/server.js
+Environment=REDIS_API_ADDRESS=172.91.18.171:8080
+ExecStart=/bin/node /home/todo/todo/server.js
 SyslogIdentifier=todo
 Restart=on-failure
 
