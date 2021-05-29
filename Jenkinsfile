@@ -15,7 +15,7 @@ pipeline {
         stage ('upload artifacts') {
             steps {
                 sh '''
-                  curl -f -v -u admin:admin123 --upload-file todo.zip http://172.31.13.117:8081/repository/todo/todo.zip
+                  curl -f -v -u admin:admin123 --upload-file /home/ubuntu/workspace/CI-Pipelines/todo.zip http://172.31.13.117:8081/repository/todo/todo.zip
                 '''
             }
         }
