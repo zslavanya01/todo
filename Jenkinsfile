@@ -1,23 +1,9 @@
-pipeline {
-    agent any
+@Library('todoapp') _
 
-    stages {
-
-        stage ('prepare artifacts') {
-            steps {
-                sh '''
-        
-                  zip -r ../todo.zip *
-                '''
-
-            }
-        }
-        stage ('upload artifacts') {
-            steps {
-                sh '''
-                  curl -f -v -u admin:admin123 --upload-file /home/ubuntu/workspace/CI-Pipelines/todo.zip http://172.31.13.117:8081/repository/todo/todo.zip
-                '''
-            }
-        }
-    }
-}
+todoapp (
+    COMPONENT          : 'todo',
+    PROJECT_NAME       :  "Todoapp",
+    SLAVE_LABEL        :  "JAVA",
+    SKIP_NEXUS_UPLOAD  :  false,
+    APP_TYPE           :  "NGINX"
+)
