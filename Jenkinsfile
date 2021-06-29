@@ -9,9 +9,20 @@
 // )
 
 pipeline {
-    agent any
+    agent {
+        label 'JAVA'
+    }
 
     stages {
+
+        stage('Download dependecies') {
+            steps {
+                sh '''
+                  npm install
+                '''
+            }
+        }
+
 
         stage('prepare artifacts') {
             steps {
