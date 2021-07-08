@@ -3,7 +3,7 @@
 todoapp (
     COMPONENT          :  'todo',
     PROJECT_NAME       :  "Todoapp",
-    SLAVE_LABEL        :  "master",
+    SLAVE_LABEL        :  "NODEJS",
     SKIP_NEXUS_UPLOAD  :   false,
     APP_TYPE           :  "NGINX"
 )
