@@ -5,6 +5,6 @@ todoapp (
     PROJECT_NAME       :  "Todoapp",
     SLAVE_LABEL        :  "NODEJS",
     SKIP_NEXUS_UPLOAD  :   false,
-    APP_TYPE           :  "NGINX"
+    APP_TYPE           :  "NGINX-1"
 )
 
